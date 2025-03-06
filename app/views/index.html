@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Pickup Requests</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Waste Pickup Requests</h1>
+
+    <form id="pickupForm">
+        <input type="text" id="wasteType" placeholder="Waste Type" required>
+        <input type="text" id="pickupLocation" placeholder="Pickup Location" required>
+        <input type="datetime-local" id="pickupDateTime" required>
+        <input type="text" id="userName" placeholder="Your Name" required>
+        <button type="submit">Request Pickup</button>
+    </form>
+
+    <h2>Update or Cancel a Request</h2>
+
+    <form id="updateForm">
+        <input type="number" id="updateId" placeholder="Request ID" required>
+        <input type="datetime-local" id="updatePickupDateTime">
+        <select id="updateStatus">
+            <option value="">Select Status</option>
+            <option value="Pending">Pending</option>
+            <option value="Completed">Completed</option>
+        </select>
+        <button type="submit">Update Request</button>
+    </form>
+
+    <form id="deleteForm">
+        <input type="number" id="deleteId" placeholder="Request ID" required>
+        <button type="submit">Cancel Request</button>
+    </form>
+
+    <h2>All Requests</h2>
+    <ul id="requestsList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
