@@ -8,11 +8,6 @@ sudo apt update
 sudo apt install g++ cmake libboost-all-dev
 ```
 
-Install Crow (if not already included):
-```
-git clone https://github.com/CrowCpp/Crow.git
-```
-
 Clone the Repository
 ```
 git clone https://github.com/Bharathh-k/WasteManagement.git
@@ -22,6 +17,11 @@ git clone https://github.com/Bharathh-k/WasteManagement.git
 Navigate to Project Directory
 ```
 cd app
+```
+
+Install Crow (if not already included):
+```
+git clone https://github.com/CrowCpp/Crow.git
 ```
 
 Compile the Server
