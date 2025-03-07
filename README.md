@@ -33,3 +33,8 @@ Run the Server
 ```
 ./server
 ```
+
+The server will now be live on port 8080
+```
+http://localhost:8080
+```
